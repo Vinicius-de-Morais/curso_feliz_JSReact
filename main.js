@@ -7,9 +7,13 @@ import BoardGame from './src/objects/BoardGame';
 
 
 const $root = document.querySelector('#root');
-const $htmlBoardGame = BoardGame(6)
-const $htmlPlayerText = PlayerText('Vinicius');
 
-$root.insertAdjacentHTML('beforeend', $htmlBoardGame)
-$root.insertAdjacentHTML('afterbegin', $htmlPlayerText)
+$root.insertAdjacentHTML(
+    'beforeend', 
+    `
+        ${PlayerText('Player 1')}
+        ${PlayerText('Player 2')}
+        ${BoardGame(6)}    
+    `
+)
 

@@ -1,8 +1,8 @@
 import "./style.css"
 
-function PlayerText(text){
+function PlayerText(content){
     return `
-        <p class="player-text">${text}</p>
+        <p class="player-text">${content}</p>
     `
 }
 
