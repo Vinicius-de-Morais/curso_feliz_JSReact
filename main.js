@@ -1,10 +1,15 @@
 import './src/styles/settings/colors.css'
 import './src/styles/generic/reset.css'
 import './src/styles/elements/base.css'
-import CardGame from "./src/components/CardGame";
+
+import PlayerText from './src/components/PlayerText';
+import BoardGame from './src/objects/BoardGame';
 
 
 const $root = document.querySelector('#root');
-const $htmlCardGame = CardGame();
+const $htmlBoardGame = BoardGame(6)
+const $htmlPlayerText = PlayerText('Vinicius');
 
-$root.insertAdjacentHTML('beforeend', $htmlCardGame)
+$root.insertAdjacentHTML('beforeend', $htmlBoardGame)
+$root.insertAdjacentHTML('afterbegin', $htmlPlayerText)
+
