@@ -8,6 +8,8 @@
     position: relative;
     transform-style: preserve-3d;
     transition: transform 600ms cubic-bezier(0.42, 0, 0.53, 1.51);
+
+    cursor: pointer;
 }
 .card-front-back.-active{
     transform: rotateY(180deg);
