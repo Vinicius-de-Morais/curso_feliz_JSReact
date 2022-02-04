@@ -1,22 +1,32 @@
 
 .player-score{
+    box-sizing: border-box;
     width: 50px;
     height: 20px;
-    border: 2px solid var(--color-fiery-rose);
     background-color: var(--color-floral-white);
-    box-sizing: border-box;
+    border: 2px solid var(--color-fiery-rose);
+    padding: 1px;
     display: flex;
-
+    gap: 1px;
 }
 
-.box{
-    margin: 0.5px;
-    padding: 0.5px;
-    width: 14px;
-    background: var(--color-old-silver);
-    
+.player-score > .pointer {
+
+    background-color: var(--color-old-silver);
+    text-indent: -99999px;
+    overflow: hidden;
+    width: 33%;
 }
 
-.box.-green {
-    background: var(--color-mantis);
+
+.player-score > .pointer.-a1, .pointer.-a2,
+.pointer.-a3 {
+    background-color: var(--color-mantis);
+}
+.player-score > .pointer.-b2, .pointer.-b3 {
+    background-color: var(--color-mantis);
+}
+
+.player-score > .pointer.-c3 {
+    background-color: var(--color-mantis);
 }

@@ -6,6 +6,8 @@ function ScoreBoard(){
  return `
     <header class="score-board">
         ${PlayerText('Player1')}
+        ${PlayerScore(1)}
+        vs
         ${PlayerScore()}
         ${PlayerText('Player2')}
     </header>

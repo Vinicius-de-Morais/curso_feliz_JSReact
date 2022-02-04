@@ -1,36 +1,16 @@
 import TurnArrow from '../TurnArrow'
 import './style.css'
 
-function PlayerScore(){
-
+function PlayerScore(points = 0){
 
     return `
         
-        ${TurnArrow()}
-        <article class="player-score -playerOne">
-            <div class="box -one -turn">
-                
-            </div>
-            <div class="box -two">
-                
-            </div>
-            <div class="box -three">
-                
-            </div>
-        </article>
-        vs
-        <article class="player-score -playerTwo">
-            <div class="box -one">
-                
-            </div>
-            <div class="box -two">
-                
-            </div>
-            <div class="box -three">
-                
-            </div>
-        </article>
-    `
+        <ol class="player-score" data-points="${points}">
+            <li class="pointer -a${points}">Um</li>
+            <li class="pointer -b${points}">Dois</li>
+            <li class="pointer -c${points}">Três</li>
+        </ol>
+    `;
 }
 
-export default PlayerScore
+export default PlayerScore;
