@@ -1,18 +1,11 @@
 import './style.css'
 
-function TurnArrow() {
-
-    window.TurnArrow = {}
-
-    window.TurnArrow.handleClick = (event) =>{
-        const $origin = event.target;
-        const $cardFrontBack = $origin.closest('box');
-        
-        console.log(event);
-    }
+function TurnArrow(currentPlayer = 1) {
 
     return `
-        <img onclick="TurnArrow.handleClick(event)" class="turn-arrow" src="../src/images/IconArrowDown.png" alt="turn arrow" />
+        <img class="turn-arrow" src="../src/images/IconArrowDown.png"
+        data-currentPlayer="${currentPlayer}" 
+        alt="turn arrow" />
     `
 }
 

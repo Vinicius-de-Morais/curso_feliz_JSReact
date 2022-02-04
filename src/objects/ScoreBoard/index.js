@@ -1,12 +1,14 @@
 import "./style.css"
 import PlayerText from "../../components/PlayerText";
 import PlayerScore from "../../components/PlayerSore";
+import TurnArrow from "../../components/TurnArrow";
 
 function ScoreBoard(){
  return `
     <header class="score-board">
+        ${TurnArrow()}
         ${PlayerText('Player1')}
-        ${PlayerScore(1)}
+        ${PlayerScore()}
         vs
         ${PlayerScore()}
         ${PlayerText('Player2')}
